@@ -26,7 +26,7 @@
                             </div>
                             <div class="h-0 opacity-0 overflow-hidden transition-all duration-700 group-hover:h-[auto] opacity-100 absolute inset-x-0 bottom-[0px]"
                                 style="background-color: #333333;">
-                                <div class="p-[20px]">
+                                <div class="p-[18px]">
                                     <h2 class="text-[14px] text-[#ffffff]"><?php the_title(); ?></h2>
                                 </div>
                             </div>
@@ -46,13 +46,30 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
 <script>
-  $(document).ready(function () {
-    $(".field .owl-carousel").owlCarousel({
-      items: 5,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 3000, 
-      autoplayHoverPause: true,
+    $(document).ready(function () {
+        $(".field .owl-carousel").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000, 
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                380: {
+                    items: 2,
+                },
+                500: {
+                    items: 3,
+                },
+                768: {
+                    items: 4,
+                },
+                992: {
+                    items: 5,
+                },
+                
+            }
+        });
     });
-  });
 </script>

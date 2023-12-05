@@ -1,4 +1,3 @@
-<!-- CLIENT -->
 <div class="service bg-cover bg-no-repeat bg-center"
             style="background-image: url('https://wp.ditsolution.net/itsoft/wp-content/uploads/2023/09/Consen-2dsf.png');">
             <div class="pt-[105px] pb-[80px] ">
@@ -9,10 +8,10 @@
                         <h3> Engineering <span class=" text-[#EA3838]">Capacity.</span> </h3>
                     </div>
                 </div>
-                <div class="max-w-[1120px] p-[10px] mx-auto grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1  owl-theme">
+                <div class="max-w-[1120px] p-[10px] mx-auto grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 owl-carousel owl-theme">
                     <?php
                         $customPostType = new WP_Query(array(
-                            'posts_per_page' => 4,
+                            'posts_per_page' => 9,
                             'post_type' => 'service'
                         ));
                         while($customPostType -> have_posts()) {
@@ -44,14 +43,28 @@
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
-<!-- <script>
-  $(document).ready(function () {
-    $(".service .owl-carousel").owlCarousel({
-      items: 4,
-      loop: true,
-    //   autoplay: true,
-      autoplayTimeout: 3000, 
-      autoplayHoverPause: true,
+<script>
+    $(document).ready(function () {
+        $(".service .owl-carousel").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000, 
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                500: {
+                    items: 2,
+                },
+                768: {
+                    items: 3,
+                },
+                992: {
+                    items: 4,
+                },
+                
+            }
+        });
     });
-  });
-</script> -->
+</script>

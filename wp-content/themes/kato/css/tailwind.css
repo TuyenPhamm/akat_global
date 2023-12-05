@@ -33,9 +33,26 @@
   @apply grid gap-6 mb-6 md:grid-cols-2;
 }
 #main-menu {
-  @apply flex justify-between;
+  @apply flex justify-between
 }
 
 .owl-item {
   @apply h-[-webkit-fill-available]
+}
+
+
+.menu-item-71  {
+  @apply text-[#9D9D9D] pb-[7px] hover:text-[#EA3838] 
+}
+.menu-item-72  {
+  @apply text-[#9D9D9D] pb-[7px] hover:text-[#EA3838] 
+}
+.menu-item-73  {
+  @apply text-[#9D9D9D] pb-[7px] hover:text-[#EA3838] 
+}
+.menu-item-74  {
+  @apply text-[#9D9D9D] pb-[7px] hover:text-[#EA3838] 
+}
+.menu-item-75  {
+  @apply text-[#9D9D9D] pb-[7px] hover:text-[#EA3838] 
 }

@@ -12,7 +12,7 @@
         <div class="pt-[80px] pb-[4px] bg-[#ffffff] max-lg:hidden">
             <div class="max-w-[1120px] mx-auto flex justify-between p-[10px]">
                 <div class="p-[10px]">
-                    <img class="max-w-[140px]" src="./img/ảnh_Viber_2023-11-07_15-28-06-501.png" alt="">
+                    <!-- <img class="max-w-[140px]" src="./img/ảnh_Viber_2023-11-07_15-28-06-501.png" alt=""> -->                   
                     <div>
                         <p class="text-[#9D9D9D] text-[16px] mb-[16px]">Globally monetize plug-and-play data without
                             reliable
@@ -23,10 +23,18 @@
                     <div>
                         <h2 class="text-[18px] font-semibold text-[#00000] mb-[13px]">Follow Us</h2>
                         <div class="text-[18px] ">
-                            <i class="ti-facebook px-[18px] text-[#9D9D9D] hover:text-[#EA3838]"></i>
-                            <i class="ti-twitter-alt px-[18px] text-[#9D9D9D] hover:text-[#EA3838]"></i>
-                            <i class="ti-instagram px-[18px] text-[#9D9D9D] hover:text-[#EA3838]"></i>
-                            <i class="ti-pinterest px-[18px] text-[#9D9D9D] hover:text-[#EA3838]"></i>
+                            <a href="">
+                                <i class="fa-brands fa-facebook px-[18px] text-[#9D9D9D] hover:text-[#EA3838]"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-twitter px-[18px] text-[#9D9D9D] hover:text-[#EA3838]"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-instagram px-[18px] text-[#9D9D9D] hover:text-[#EA3838]"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-pinterest px-[18px] text-[#9D9D9D] hover:text-[#EA3838]"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -35,21 +43,14 @@
                         <h2 class="text-[22px] font-semibold text-[#00000]">Explore</h2>
                     </div>
                     <div class="mt-[34px]">
-                        <p class="text-[16px] text-[#9D9D9D] pb-[7px] hover:text-[#EA3838]">About Company</p>
-                        <p class="text-[16px] text-[#9D9D9D] mt-[7px] pb-[7px] hover:text-[#EA3838]">Meet Our Team</p>
-                        <p class="text-[16px] text-[#9D9D9D] mt-[7px] pb-[7px] hover:text-[#EA3838]">Latest Blog</p>
-                        <p class="text-[16px] text-[#9D9D9D] mt-[7px] pb-[7px] hover:text-[#EA3838]">Contact Us</p>
-                        <p class="text-[16px] text-[#9D9D9D] mt-[7px] pb-[7px] hover:text-[#EA3838]">FAQ</p>
-                    </div>
-                </div>
-                <div class="mt-[75px] p-[10px]">
-                    <div>
-                        <p class="text-[16px] text-[#9D9D9D] mt-[7px] pb-[7px] hover:text-[#EA3838]">Latest Portfolio
+                        <p class="text-[16px] text-[#9D9D9D] pb-[7px] hover:text-[#EA3838]">
+                            <?php
+                                wp_nav_menu( array(
+                                    'theme_location' => 'footer-menu',
+                                    'menu_id'        => 'footer-menu',
+                                ) );
+                            ?>
                         </p>
-                        <p class="text-[16px] text-[#9D9D9D] mt-[7px] pb-[7px] hover:text-[#EA3838]">Our Services</p>
-                        <p class="text-[16px] text-[#9D9D9D] mt-[7px] pb-[7px] hover:text-[#EA3838]">Privacy Policy</p>
-                        <p class="text-[16px] text-[#9D9D9D] mt-[7px] pb-[7px] hover:text-[#EA3838]">Supports</p>
-                        <p class="text-[16px] text-[#9D9D9D] mt-[7px] pb-[7px] hover:text-[#EA3838]">Career</p>
                     </div>
                 </div>
                 <div class="p-[10px]">
@@ -78,15 +79,19 @@
                 </div>
                 <div class="grid grid-cols-2 p-[10px]">
                     <div>
-                        <p class="mx-[18px] text-[16px] text-[#9D9D9D] hover:text-[#EA3838]">Privacy Policy</p>
+                        <a href="">
+                            <p class="mx-[18px] text-[16px] text-[#9D9D9D] hover:text-[#EA3838]">Privacy Policy</p>
+                        </a>
                     </div>
                     <div>
-                        <p class="mx-[18px] text-[16px] text-[#9D9D9D] hover:text-[#EA3838]">Supports</p>
+                        <a href="">
+                            <p class="mx-[18px] text-[16px] text-[#9D9D9D] hover:text-[#EA3838]">Supports</p>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="pt-[80px] pb-[4px] bg-[#ffffff] lg:hidden">
+        <!-- <div class="pt-[80px] pb-[4px] bg-[#ffffff] lg:hidden">
             <div class="max-w-[1120px] mx-auto grid grid-cols-2 max-md:grid-cols-1 p-[10px]">
                 <div class="p-[10px]">
                     <img class="max-w-[140px]" src="./img/ảnh_Viber_2023-11-07_15-28-06-501.png" alt="">
@@ -112,21 +117,14 @@
                         <h2 class="text-[22px] font-semibold text-[#00000]">Explore</h2>
                     </div>
                     <div class="mt-[34px]">
-                        <p class="text-[16px] text-[#9D9D9D] pb-[7px] hover:text-[#EA3838]">About Company</p>
-                        <p class="text-[16px] text-[#9D9D9D] mt-[7px] pb-[7px] hover:text-[#EA3838]">Meet Our Team</p>
-                        <p class="text-[16px] text-[#9D9D9D] mt-[7px] pb-[7px] hover:text-[#EA3838]">Latest Blog</p>
-                        <p class="text-[16px] text-[#9D9D9D] mt-[7px] pb-[7px] hover:text-[#EA3838]">Contact Us</p>
-                        <p class="text-[16px] text-[#9D9D9D] mt-[7px] pb-[7px] hover:text-[#EA3838]">FAQ</p>
-                    </div>
-                </div>
-                <div class="mt-[75px] p-[10px]">
-                    <div>
-                        <p class="text-[16px] text-[#9D9D9D] mt-[7px] pb-[7px] hover:text-[#EA3838]">Latest Portfolio
+                        <p class="text-[16px] text-[#9D9D9D] pb-[7px] hover:text-[#EA3838]">
+                            <?php
+                                wp_nav_menu( array(
+                                    'theme_location' => 'footer-menu',
+                                    'menu_id'        => 'footer-menu',
+                                ) );
+                            ?>
                         </p>
-                        <p class="text-[16px] text-[#9D9D9D] mt-[7px] pb-[7px] hover:text-[#EA3838]">Our Services</p>
-                        <p class="text-[16px] text-[#9D9D9D] mt-[7px] pb-[7px] hover:text-[#EA3838]">Privacy Policy</p>
-                        <p class="text-[16px] text-[#9D9D9D] mt-[7px] pb-[7px] hover:text-[#EA3838]">Supports</p>
-                        <p class="text-[16px] text-[#9D9D9D] mt-[7px] pb-[7px] hover:text-[#EA3838]">Career</p>
                     </div>
                 </div>
                 <div class="p-[10px]">
@@ -176,7 +174,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     <?php wp_footer(); ?>
     
     <script>

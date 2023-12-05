@@ -32,7 +32,7 @@
 </head>
     <div class="">
         <header class="">
-        <div class="pt-[50px] fixed top-0 left-0 w-full z-50 lg:hidden">
+        <div class="fixed top-0 left-0 w-full z-50 lg:hidden">
             <div class=" bg-[#EA3838] ">
                 <div class="flex justify-between max-lg:justify-between l max-w-[1120px] mx-auto p-[10px]">
                     <div class="px-[15px]">
@@ -60,7 +60,7 @@
             
 
         </div>
-        <div class="pt-[50px] fixed top-0 left-0 w-full bg-[#ffffff] z-50">
+        <div class="fixed top-0 left-0 w-full bg-[#ffffff] z-50">
             <div class="flex justify-between max-lg:hidden l max-w-[1120px] mx-auto ">
                 <div class="px-[15px]">
                     <img class="max-h-[100px]" src="./img/ảnh_Viber_2023-11-07_15-28-06-501.png" alt="">
