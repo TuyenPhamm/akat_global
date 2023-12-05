@@ -63,10 +63,12 @@
         <div class="fixed top-0 left-0 w-full bg-[#ffffff] z-50">
             <div class="flex justify-between max-lg:hidden l max-w-[1120px] mx-auto ">
                 <div class="px-[15px]">
-                    <img class="max-h-[100px]" src="./img/ảnh_Viber_2023-11-07_15-28-06-501.png" alt="">
+                    <?php
+                    dynamic_sidebar('logo');
+                    ?>
                 </div>
                 <div class="flex justify-between w-[885px] px-[15px]">
-                    <div class="flex ">
+                    <div class="flex">
                         <div class="flex my-auto px-[10px] leading-[100px] hover:text-[#EA3838]">
                             <p class="text-[16px]">
                             <?php

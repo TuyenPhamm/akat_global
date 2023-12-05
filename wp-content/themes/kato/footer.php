@@ -13,6 +13,9 @@
             <div class="max-w-[1120px] mx-auto flex justify-between p-[10px]">
                 <div class="p-[10px]">
                     <!-- <img class="max-w-[140px]" src="./img/ảnh_Viber_2023-11-07_15-28-06-501.png" alt=""> -->                   
+                    <?php
+                    dynamic_sidebar('logo');
+                    ?>
                     <div>
                         <p class="text-[#9D9D9D] text-[16px] mb-[16px]">Globally monetize plug-and-play data without
                             reliable

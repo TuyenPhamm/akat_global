@@ -20,13 +20,27 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
 <script>
-  $(document).ready(function () {
-    $(".partner .owl-carousel").owlCarousel({
-      items: 4,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 3000, 
-      autoplayHoverPause: true,
+    $(document).ready(function () {
+        $(".partner .owl-carousel").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000, 
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                500: {
+                    items: 2,
+                },
+                768: {
+                    items: 3,
+                },
+                992: {
+                    items: 4,
+                },
+                
+            }
+        });
     });
-  });
 </script>

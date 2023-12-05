@@ -23,7 +23,7 @@
                                     <div class="text-center">
                                         <img src="<?php echo get_image_featured_path(get_the_ID()); ?>" />
                                         <h2
-                                            class="text-[20px] text-[#232323] font-semibold leading-[26px] mt-[5px] mb-[17px]  group-hover:text-[#EA3838]">
+                                            class="pb-[20px] text-[18px] text-[#232323] font-semibold leading-[26px] mt-[5px] mb-[17px]  group-hover:text-[#EA3838]">
                                             <?php the_title(); ?>
                                         </h2>
                                     </div>
